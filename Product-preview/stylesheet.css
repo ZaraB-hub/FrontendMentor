@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    height:97vh;
     }
 
 
@@ -110,3 +110,16 @@ button:hover{
     background-color: hsla(159, 72%, 11%, 0.99);
 }
 
+@media (max-width:500px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        
+    }
+
+
+    
+
+}
