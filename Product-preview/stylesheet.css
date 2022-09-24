@@ -110,18 +110,26 @@ button:hover{
     background-color: hsla(159, 72%, 11%, 0.99);
 }
 
-@media (max-width:500px) {
+.image2{
+    display:none;
+}
+
+@media (max-width:700px) {
 
     .container{
         display: flex;
         flex-direction: column;
         width: 50%;
         
+        
     }
 .left{
     width: fit-content;
-    
+    image-orientation: flip;
+}
 
+.left img{
+    border-radius: 10px 10px 0 0;
 }
 
 .right{
@@ -130,7 +138,16 @@ button:hover{
     width: 100%;
 }
 
+img1{
+    display: none;;
+}
 
-    
+img2{
+    display: block;
+}
+
+.button{
+    width: 90%;
+}
 
 }
