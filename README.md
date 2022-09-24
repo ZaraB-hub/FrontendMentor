@@ -1,1 +1,1 @@
-Challanges done from the FrontendMentor site
+Challangs done from the FrontendMentor site
