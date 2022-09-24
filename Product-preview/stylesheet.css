@@ -115,9 +115,20 @@ button:hover{
     .container{
         display: flex;
         flex-direction: column;
-        width:fit-content;
+        width: 50%;
         
     }
+.left{
+    width: fit-content;
+    
+
+}
+
+.right{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
 
 
     
