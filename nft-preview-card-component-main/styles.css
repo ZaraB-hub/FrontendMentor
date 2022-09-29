@@ -35,7 +35,7 @@ body {
     margin-top: 3rem;
     margin-bottom: 3rem;
     overflow: auto;
-
+    
 
 
 
@@ -84,6 +84,9 @@ svg {
 }
 
 img {
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: contian;
+    background-color: var(--Cyan);
     width: 90%;
     margin-top: 2rem;
     margin-inline: auto;
@@ -94,24 +97,12 @@ img {
     backface-visibility: hidden;
 }
 
-.card svg {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.card:nth-child(1){
-    opacity: 1s;
-}
 
 img:hover {
     opacity: 0.3;
     background-color: var(--Cyan);
     background-blend-mode: lighten;
+    filter: brightness(1.75);
 }
 
 #price {

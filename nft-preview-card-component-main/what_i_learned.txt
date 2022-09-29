@@ -9,3 +9,30 @@
     padding-top: 0.5rem;
     border-bottom: 1px solid var(--Soft_blue); /* This creates the border.  */
 }
+
+
+ou're actually seeing the top margin of the #inner element collapse into the top edge of the #outer element, leaving only the #outer margin intact (albeit not shown in your images). The top edges of both boxes are flush against each other because their margins are equal.
+
+Here are the relevant points from the W3C spec:
+
+8.3.1 Collapsing margins
+In CSS, the adjoining margins of two or more boxes (which might or might not be siblings) can combine to form a single margin. Margins that combine this way are said to collapse, and the resulting combined margin is called a collapsed margin.
+
+Adjoining vertical margins collapse [...]
+
+Two margins are adjoining if and only if:
+
+both belong to in-flow block-level boxes that participate in the same block formatting context
+no line boxes, no clearance, no padding and no border separate them
+both belong to vertically-adjacent box edges, i.e. form one of the following pairs:
+top margin of a box and top margin of its first in-flow child
+You can do any of the following to prevent the margin from collapsing:
+
+Float either of your div elements
+Make either of your div elements inline blocks
+Set overflow of #outer to auto (or any value other than visible)
+The reason the above options prevent the margin from collapsing is because:
+
+Margins between a floated box and any other box do not collapse (not even between a float and its in-flow children).
+Margins of elements that establish new block formatting contexts (such as floats and elements with 'overflow' other than 'visible') do not collapse with their in-flow children.
+Margins of inline-block boxes do not collapse (not even with their in-flow children).
