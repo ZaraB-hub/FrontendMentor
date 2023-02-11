@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --lcyan: hsl(179, 37%, 58%);
+    --yello: hsl(71, 73%, 54%);
+    --grey: hsl(204, 43%, 93%);
+    --greyishblue: hsl(218, 22%, 67%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(156, 217, 245);
+
+}
+
+.deck {
+    display: grid;
+    margin: 30px 0;
+}
+
+.card {
+    margin-inline: 10%;
+    display: grid;
+    row-gap: 20px;
+}
+
+.one{
+    background-color: white;
+}
+
+.one > h1{
+    color: var(--cyan);
+}
+.one > h3{
+    color: var(--yello);
+}
+
+.one>p{
+    color:var(--greyishblue);
+    line-height: 2;;
+}
+p{
+    color: var(--grey);
+    line-height: 1.5;
+}
+
+.two{
+    background-color: var(--cyan);
+}
+
+.three{
+    background-color: var(--lcyan);
+}
+.padding{
+    padding: 40px;
+}
+
+h3{
+    color: white;
+}
+.price{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.price>span{
+    color: var(--grey);
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+button{
+    color: white;
+    background-color: var(--yello);
+    border: none;
+    font-size: medium;
+    border-radius: 7px;
+    padding: 17px;
+    box-shadow: 2px 4px 6px 2px #55744e;
+}
+@media screen and (min-width: 700px) {
+    body{
+        height: 100vh;
+    }
+    .deck {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 70%;
+    }
+
+    .card{
+        margin: 0;
+    }
+
+    .one{
+        grid-column:1/3;
+        
+    }
+
+    .two, .three{
+        grid-row: 2/3;
+    }
+}
