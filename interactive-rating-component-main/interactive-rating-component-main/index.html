@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="card">
+
+    <div class="star">
+      <img  src="images/icon-star.svg" alt="">
+    </div>
+    <div class="text">
+      <div class="heading"><h1>How did we do?</h1></div>
+      <div class="p">
+        <p>  Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+    </div>
+
+    <div class="ratings">
+      <button class="rating" value="1">1</button>
+      <button class="rating" value="2">2</button>
+      <button class="rating" value="3">3</button>
+      <button class="rating" value="4">4</button>
+      <button class="rating" value="5">5</button>
+    </div>
+  
+    <div class="submit">
+      <button id="submit">submit</button>
+    </div>
+  </div>
+
+
+
+<div class="cardtwo">
+  <div class="card">
+    <div class="image">
+      <img src="images/illustration-thank-you.svg" alt="">
+    </div>
+    <p id="stars">You selected * out of 5</p>
+    <div id="t">
+      <h1>Thank you!</h1>
+      <p class="center-align"> We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
