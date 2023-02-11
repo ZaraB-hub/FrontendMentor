@@ -1,0 +1,103 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --orange:hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan:hsl(179, 100%, 13%);
+    --para:hsla(0, 0%, 100%, 0.75);
+    --bh-heading-btn: hsl(0, 0%, 95%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bh-heading-btn);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    padding: 10% 10%;
+    max-width: 400px;
+}
+
+.deck{
+    margin: 10px;
+}
+
+.one{
+    background-color: var(--orange);
+    border-radius: 14px 14px 0px 0px;
+}
+
+.two{
+    background-color: var(--cyan);
+}
+
+.three{
+    background-color: var(--dark-cyan);
+    border-radius: 0px 0px 14px 14px ;
+
+}
+
+button{
+    background-color: white;
+    color: var(--cyan);
+    border-radius: 14px;
+    padding: 10px 20px;
+    border: none;
+    
+    cursor: pointer;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 1.7;
+}
+@media screen and (min-width: 700px) {
+    .deck{
+        display: flex;
+        border-radius: 14px;
+        margin: 50px;
+        
+    }
+
+    .one{
+        border-radius: 14px 0px 0px 14px;
+        
+    }
+
+    .three{
+        border-radius: 0px 14px 14px 0px;
+        
+    }
+
+    .card{
+        padding: 10% 5%;
+        max-width: 400px;
+    }
+
+    button{
+        margin-top: 50px;
+    }
+
+}
