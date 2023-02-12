@@ -33,6 +33,7 @@ li{
     color: var(--Soft-orange);
     list-style: none;
     line-height: 1.7;
+    text-align: center;
 }
 
 #nav__overlay{
