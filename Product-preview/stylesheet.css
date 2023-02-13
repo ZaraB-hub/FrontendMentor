@@ -120,6 +120,12 @@ button:hover {
 
 @media (max-width:700px) {
 
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -149,8 +155,8 @@ button:hover {
         display: block;
     }
 
-    .button {
-        width: 30%;
+    button {
+        width: 90%;
     }
 
 }

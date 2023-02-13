@@ -133,3 +133,9 @@ button {
     text-align: center;
 }
 
+@media screen and (max-width:600px) {
+    .card{
+        margin-inline: 15px;
+    }
+    
+}

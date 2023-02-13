@@ -16,26 +16,25 @@
 </head>
 <body class="center">
 
-  <div class="card center" id="advice">
-    <div class="id" id="id">
+  <div class="position">
+    <div class="card center" id="advice">
+      <div class="id" id="id">
+      </div>
+      <div class="text" id="text">
+      </div>
+      <div class="divider">
+        <img src="images/pattern-divider-mobile.svg" alt="divider">
+      </div>
     </div>
-    <div class="text" id="text">
+    <div id="dice">
+      <img src="images/icon-dice.svg" alt="dice" >
     </div>
-    <div class="divider">
-      <img src="images/pattern-divider-mobile.svg" alt="divider">
-    </div>
-  </div>
-
-
-  <div id="dice">
-    <img src="images/icon-dice.svg" alt="dice" >
   </div>
 
   <script>
     const button=document.getElementById("dice");
 
     button.addEventListener("click",()=>{
-      console.log("Zara");
       qoute();
     })
 
@@ -48,7 +47,8 @@
         const id=document.getElementById("id");
         id.textContent=`Advice #${data.slip.id}`;
         const text=document.getElementById("text");
-        text.textContent=`"${data.slip.advice}"`;
+        text.textContent=`" ${data.slip.advice} "`;
+        console.log(data.slip.advice)
       })
     }
   </script>
