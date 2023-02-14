@@ -1,0 +1,77 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.stats{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+p{
+    margin: 7px;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.name{
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+    padding-top: 70px;
+}
+
+.name__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 3px;
+}
+
+.card{
+    border-radius: 14px;
+    background-color: white;
+    
+}
+
+.background>img{
+    border-radius: 14px 14px 0 0 ;
+}
+.background{
+    position: relative;
+}
+
+.profile>img{
+    border-radius: 50%;
+    position: absolute;
+    border: 7px solid white;
+    bottom: -61px;
+    left: 35%;
+}
+
+body{
+    background: url(images/bg-pattern-bottom.svg) bottom -796px right -340px no-repeat, url(images/bg-pattern-top.svg) top -650px left -464px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+
+}
+
+
+@media screen  and (max-width:500px){
+    body{
+        background:url(images/bg-pattern-bottom.svg) bottom -558px right -678px no-repeat, url(images/bg-pattern-top.svg) top -505px left -709px no-repeat;
+        background-color: hsl(185, 75%, 39%);
+    }
+}
